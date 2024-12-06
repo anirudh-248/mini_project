@@ -97,3 +97,45 @@ hr {
     text-decoration: none;
     cursor: pointer;
 }
+
+/* Header styling */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-image: url('background.jpg');
+    background-size: cover;
+    color: black;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline;
+    font-size: large;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: lightcoral
+}
