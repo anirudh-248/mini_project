@@ -18,21 +18,20 @@ html {
     width: 500px;
     height: 550px;
     overflow: hidden;
-    opacity: 0; /* Initially hidden */
-    transform: translateY(100px); /* Positioned slightly down */
+    opacity: 0;
+    transform: translateY(100px);
     transition: transform 1s ease-out, opacity 1s ease-out;
 }
 
 .images .item.visible {
-    opacity: 1; /* Fully visible */
-    transform: translateY(0); /* Move to original position */
+    opacity: 1;
+    transform: translateY(0);
 }
 
-/* Hover effect */
 .images .item:hover {
-    border-color: #007BFF; /* Change border color */
-    box-shadow: 0px 8px 15px rgba(0, 123, 255, 0.2); /* Add shadow */
-    transform: scale(1.05); /* Slightly enlarge */
+    border-color: #007BFF;
+    box-shadow: 0px 8px 15px rgba(0, 123, 255, 0.2);
+    transform: scale(1.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -48,18 +47,6 @@ h1 {
 hr {
     height: 5px;
     background-color: black;
-}
-
-@media (max-width: 768px) {
-    .images .item {
-        width: 80%; /* Adjust width for smaller screens */
-        margin: 10px auto; /* Center align with smaller margin */
-    }
-
-    .images .item img {
-        width: 100%;
-        height: auto;
-    }
 }
 
 .modal {
@@ -98,7 +85,6 @@ hr {
     cursor: pointer;
 }
 
-/* Header styling */
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -138,4 +124,16 @@ hr {
 
 .navbar ul li a:hover {
     color: lightcoral
+}
+
+@media (max-width: 768px) {
+    .images .item {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .images .item img {
+        width: 100%;
+        height: auto;
+    }
 }
